@@ -1,10 +1,17 @@
 package com.samiul.java.generics;
 
+import  com.samiul.java.generics.MyCustomList;
+
 public class GenericsRunner {
 
 	public static void main(String[] args) {
 		
-		System.out.println("Hello World");
+		MyCustomList list = new MyCustomList();
+		
+		list.addElement("Samiul Basir");
+		list.addElement("Sukhi Moni");
+		
+		list.showElement();
 		
 	}
 

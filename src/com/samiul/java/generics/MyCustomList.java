@@ -2,17 +2,17 @@ package com.samiul.java.generics;
 
 import java.util.ArrayList;
 
-public class MyCustomList {
+public class MyCustomList <T> {
 
-	ArrayList<String> list = new ArrayList<String>();
+	ArrayList<T> list = new ArrayList<T>();
 
-	public void addElement(String element) {
+	public void addElement(T element) {
 		list.add(element);
 
 		System.out.println("Element added Successfully!!!");
 	}
 
-	public void removeElement(String element) {
+	public void removeElement(T element) {
 		list.remove(element);
 
 		System.out.println("Element remove Scucessfully!!!");
